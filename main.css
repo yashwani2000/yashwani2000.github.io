@@ -1,0 +1,813 @@
+/*--------Global--------*/
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  text-decoration: none;
+  font-size: 100%;
+  vertical-align: baseline;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: 'Nunito', sans-serif;
+  background:
+    linear-gradient(27deg, #151515 5px, transparent 5px) 0 5px,
+    linear-gradient(207deg, #151515 5px, transparent 5px) 10px 0,
+    linear-gradient(27deg, #222 5px, transparent 5px) 0 10px,
+    linear-gradient(207deg, #222 5px, transparent 5px) 10px 5px,
+    linear-gradient(90deg, #1b1b1b 10px, transparent 10px),
+    linear-gradient(#1d1d1d 25%, #1a1a1a 25%, #1a1a1a 50%, transparent 50%, transparent 75%, #242424 75%, #242424);
+  background-color: #131313;
+  background-size: 20px 20px;
+}
+
+section {
+  width: 100%;
+  height: 100vh;
+}
+
+/*--------NavBar--------*/
+.header {
+  z-index: 10;
+  position: fixed;
+  top: 0;
+  background-color: rgba(255, 255, 255, 0);
+  height: 10vh;
+  width: 100%;
+}
+
+.header .logo {
+  color: #F9F6EF;
+  font-size: 35px;
+  font-weight: bold;
+  line-height: 100px;
+  padding: 0 40px;
+  transition: 0.4s;
+}
+
+.menu {
+  float: right;
+  margin-right: 20px;
+}
+
+.menu .list li {
+  display: inline-block;
+  margin: 0 5px;
+  line-height: 100px;
+}
+
+.menu .list li a {
+  color: #F9F6EF;
+  font-size: 1.5em;
+  text-transform: uppercase;
+  transition: 0.2s;
+  padding: 12px 10px 10px;
+  font-weight: 700;
+}
+
+.menu .list:hover li a {
+  color: #aaa;
+}
+
+
+.menu .list li:hover a {
+  color: #000;
+  background: #F9F6EF;
+  border-radius: 20px;
+}
+
+.menu .list li a:before{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 10em;
+  color: rgba(0,0,0,0.1);
+  z-index: -1;
+  opacity: 0;
+  font-weight: 900;
+  transition: letter-spacing 0.5s;
+  transition: opacity 0.5s;
+}
+
+.menu .list li a:hover:before{
+  width:100%;
+  height: 100vh;
+  content: attr(data-text);
+  opacity: 1;
+  background: #fff;
+}
+
+
+
+.show-menu-btn, .hide-menu-btn {
+  display: none;
+}
+
+/*--- Change ----*/
+.menu .list a:hover,
+.show-menu-btn:hover,
+.menu .hide-menu-btn:hover,
+.header .logo:hover {
+  color: #9b0000;
+}
+
+#chk {
+  position: absolute;
+  visibility: hidden;
+  z-index: -1111;
+}
+
+@media screen and (max-width:800px) {
+  .show-menu-btn, .menu .hide-menu-btn {
+    transition: 0.4s;
+    font-size: 35px;
+    cursor: pointer;
+    color: #F9F6EF;
+    line-height: 100px;
+    float: right;
+    margin-right: 20px;
+  }
+
+  .show-menu-btn {
+    display: block;
+  }
+
+  .menu .hide-menu-btn {
+    display: none;
+  }
+
+  .menu {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    right: -100%;
+    transition: 0.7s;
+    background: #000;
+    top: 0;
+    margin: 0;
+  }
+
+  .menu .list {
+    text-align: center;
+    line-height: normal;
+    padding: 30vh 0 80px;
+  }
+
+  .menu .list li {
+    display: block;
+    padding: 20px;
+  }
+
+  .menu .list li a {
+    color: #F9F6EF;
+    font-size: 2em;
+    text-transform: uppercase;
+    transition: 0.2s;
+    padding: 12px 10px 10px;
+    font-weight: 700;
+  }
+
+  .menu .list li a:before {
+    font-size: 4.5em;
+    padding: 20px;
+  }
+
+
+  #chk:checked~.menu .hide-menu-btn {
+    display: block;
+  }
+
+  #chk:checked~.menu {
+    right: 0;
+  }
+
+  #chk:checked~.home .right {}
+}
+
+/*--------Home--------*/
+.odd {
+  box-sizing: border-box;
+  color: #F9F6EF;
+  height: 100vh;
+  width: 100%;
+}
+
+.odd .left {
+  display: flex;
+  float: left;
+  width: 60%;
+  text-align: center;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  clip-path: polygon(95% 60%, 0 0, 0 100%);
+  background: rgba(0, 0, 0, 0.4);
+}
+
+.odd .left .leftBack {
+  display: flex;
+  float: left;
+  width: 100%;
+  text-align: center;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  clip-path: polygon(95% 55%, 0 0, 0 100%);
+  background:
+    linear-gradient(27deg, #b50505 5px, transparent 5px) 0 5px,
+    linear-gradient(207deg, #c50505 5px, transparent 5px) 10px 0,
+    linear-gradient(27deg, #990000 5px, transparent 5px) 0 10px,
+    linear-gradient(207deg, #9b0000 5px, transparent 5px) 10px 5px,
+    linear-gradient(90deg, #cb0b0b 10px, transparent 10px),
+    linear-gradient(#cf0f0c 25%, #ca0a0a 25%, #ca0a0a 50%, transparent 50%, transparent 75%, #9b0000 75%, #9b0000);
+  background-color: #c5050c;
+  background-size: 20px 20px;
+}
+
+.odd .left h1 {
+  font-size: 80px;
+  margin-right: 80px;
+}
+
+.odd .right {
+  display: flex;
+  float: left;
+  width: 40%;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.home .right .tiles {
+  z-index: -1;
+  position: relative;
+  width: 300px;
+  height: 400px;
+  transform-style: preserve-3d;
+  border-radius: 20px;
+  margin-top: 30vh;
+  background-color: #269;
+  background-blend-mode: soft-light;
+  background-image: linear-gradient(rgba(255, 255, 255, .3) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, .3) 1px, transparent 1px),
+    linear-gradient(rgba(255, 255, 255, .3) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, .3) 1px, transparent 1px);
+  background-size: 100px 100px, 100px 100px, 20px 20px, 20px 20px;
+  background-position: -2px -2px, -2px -2px, -1px -1px, -1px -1px;
+}
+
+.home .right .tiles:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.home .right .tiles:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.home .right .tiles .tile {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+  overflow: hidden;
+  animation: animate 12s linear infinite;
+  animation-delay: calc(4s*var(--i));
+  border-radius: 20px;
+  box-shadow: 5px 5px 15px rgba(255, 255, 255, 0.8);
+}
+
+@keyframes animate {
+  0% {
+    transform: perspective(500px) translate3d(0, 0, 0);
+    opacity: 1;
+  }
+
+  25% {
+    transform: perspective(500px) translate3d(-50px, -50px, 50px);
+    opacity: 1;
+  }
+
+  35%, 100% {
+    transform: perspective(500px) translate3d(-55px, -50px, 50px);
+    opacity: 0;
+  }
+}
+
+.home .right .tiles .tile .tileTitleD {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 45px;
+  color: #fff;
+  font-weight: 600;
+  background-color: #269;
+  background-blend-mode: soft-light;
+  background-image: linear-gradient(rgba(255, 255, 255, .3) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, .3) 1px, transparent 1px),
+    linear-gradient(rgba(255, 255, 255, .3) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, .3) 1px, transparent 1px);
+  background-size: 100px 100px, 100px 100px, 20px 20px, 20px 20px;
+  background-position: -2px -2px, -2px -2px, -1px -1px, -1px -1px;
+}
+
+.home .right .tiles .tile .tileTextD {
+  position: absolute;
+  padding: 20px;
+  top: 50%;
+  width: 100%;
+  height: 50%;
+  justify-content: center;
+  align-items: center;
+  font-size: 18px;
+  color: #fff;
+  background-color: #269;
+  background-blend-mode: soft-light;
+  background-image: linear-gradient(rgba(255, 255, 255, .3) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, .3) 1px, transparent 1px),
+    linear-gradient(rgba(255, 255, 255, .3) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, .3) 1px, transparent 1px);
+  background-size: 100px 100px, 100px 100px, 20px 20px, 20px 20px;
+  background-position: -2px -2px, -2px -2px, -1px -1px, -1px -1px;
+}
+
+.home .right .tiles .tile .tileTextD ul li {
+  display: inline;
+  padding: 3px;
+}
+
+.home .right .tiles .tile .tileTextD ul li a {
+  font-size: 40px;
+  color: #fff;
+  line-height: 80px;
+  cursor: pointer;
+}
+
+.home .right .tiles .tile .tileTextD ul li a:hover {
+  color: #494949;
+}
+
+@media screen and (max-width:800px) {
+  .odd .left {
+    width: 100%;
+    clip-path: polygon(100% 60%, 0 0, 0 100%);
+  }
+
+  .odd .leftBack {
+    clip-path: polygon(100% 55%, 0 0, 0 100%);
+  }
+
+  .odd .right {
+    width: 100%;
+  }
+
+  .home .right .tiles {
+    margin-top: 5vh;
+  }
+}
+
+/*--------About--------*/
+.even {
+  box-sizing: border-box;
+  color: #F9F6EF;
+  height: 100vh;
+  width: 100%;
+}
+
+.even .right {
+  display: flex;
+  float: right;
+  width: 60%;
+  text-align: center;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  clip-path: polygon(100% 0, 5% 60%, 100% 100%);
+  background: rgba(0, 0, 0, 0.4);
+}
+
+.even .rightBack {
+  display: flex;
+  float: right;
+  width: 100%;
+  text-align: center;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  clip-path: polygon(100% 0, 5% 55%, 100% 100%);
+  background:
+    linear-gradient(27deg, #c50505 5px, transparent 5px) 0 5px,
+    linear-gradient(207deg, #c50505 5px, transparent 5px) 10px 0,
+    linear-gradient(27deg, #9d0000 5px, transparent 5px) 0 10px,
+    linear-gradient(207deg, #9b0000 5px, transparent 5px) 10px 5px,
+    linear-gradient(90deg, #cb0b0b 10px, transparent 10px),
+    linear-gradient(#cf0f0c 25%, #ca0a0a 25%, #ca0a0a 50%, transparent 50%, transparent 75%, #9b0000 75%, #9b0000);
+  background-color: #c5050c;
+  background-size: 20px 20px;
+}
+
+.even .rightBack h1 {
+  font-size: 70px;
+  margin-left: 80px;
+}
+
+.even .left {
+  display: flex;
+  float: right;
+  width: 40%;
+  text-align: center;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
+
+.about .left .card {
+  width: 300px;
+  height: 400px;
+  background: #fff;
+  transform-style: preserve-3d;
+  transform: perspective(2000px);
+  transition: 1s;
+  box-shadow: inset 300px 0 50px rgba(0, 0, 0, 0.5);
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  margin-left: 100px;
+}
+
+.about .left .card:hover {
+  transform: perspective(2000px) rotate(-10deg);
+  box-shadow: inset 20px 0 50px rgba(0, 0, 0, 0.5);
+}
+
+.about .left .card .imgBox {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  border: 1px solid #000;
+  box-sizing: border-box;
+  transform-origin: left;
+  z-index: 1;
+  transition: 1s;
+}
+
+.about .left .card .imgBox img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.about .left .card:hover .imgBox {
+  transform: rotateY(-135deg);
+  z-index: 9;
+}
+
+.about .left .card .details {
+  align-self: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  box-sizing: border-box;
+  padding: 30px;
+  color: #000;
+}
+
+.about .left .card .details h2 {
+  font-weight: bolder;
+}
+
+.about .left .card .details p {
+  font-weight: lighter;
+}
+
+.about .left .card .details ul li {
+  display: inline;
+  font-size: 25px;
+  padding: 4px;
+  color: #494949;
+}
+
+.about .left .card .details ul li a {
+  color: #494949;
+}
+
+@media screen and (max-width:800px) {
+  .even .right {
+    width: 100%;
+    clip-path: polygon(100% 0, 0 60%, 100% 100%);
+  }
+
+  .even .rightBack {
+    clip-path: polygon(100% 0, 0 55%, 100% 100%);
+  }
+
+  .even .left {
+    width: 100%;
+  }
+}
+
+.projects .right {
+  padding: 20px;
+  transform-style: preserve-3d;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.projects .right .grid {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  width: 100%;
+  grid-column-gap: 30px;
+  grid-row-gap: 50px;
+  margin-right: 125px;
+  transform-style: preserve-3d;
+}
+
+.projects .right .grid .projectCard {
+  width: 200px;
+  height: 200px;
+  transform-style: preserve-3d;
+}
+
+.projects .right .grid .projectCard .front {
+  transform-style: preserve-3d;
+  -webkit-transform: perspective(600px) rotateX(0deg);
+  color: #fff;
+  font-weight: 600;
+  background-blend-mode: soft-light;
+  background-image: linear-gradient(rgba(255, 255, 255, .3) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, .3) 1px, transparent 1px),
+    linear-gradient(rgba(255, 255, 255, .3) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, .3) 1px, transparent 1px);
+  background-size: 100px 100px, 100px 100px, 20px 20px, 20px 20px;
+  background-position: -2px -2px, -2px -2px, -1px -1px, -1px -1px;
+  transform: perspective(600px) rotateX(0deg);
+  align-items: center;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  font-size: 30px;
+}
+
+.projects .right .grid .projectCard .front,
+.projects .right .grid .projectCard .back {
+  transform-style: preserve-3d;
+  -webkit-backface-visibility: hidden;
+  width: 200px;
+  height: 200px;
+  border-radius: 30px;
+  overflow: hidden;
+  backface-visibility: hidden;
+  position: absolute;
+  background-color: inherit;
+  background-blend-mode: soft-light;
+  background-image: linear-gradient(rgba(255, 255, 255, .3) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, .3) 1px, transparent 1px),
+    linear-gradient(rgba(255, 255, 255, .3) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, .3) 1px, transparent 1px);
+  background-size: 100px 100px, 100px 100px, 20px 20px, 20px 20px;
+  background-position: -2px -2px, -2px -2px, -1px -1px, -1px -1px;
+  transition: transform 0.6s ease;
+}
+
+.projects .right .grid .projectCard .back {
+  transform-style: preserve-3d;
+  -webkit-transform: perspective(600px) rotateX(180deg);
+  transform: perspective(600px) rotateX(180deg);
+}
+
+.projects .right .grid .projectCard:hover .front {
+  transform-style: preserve-3d;
+  -webkit-transform: perspective(600px) rotateX(180deg);
+  transform: perspective(600px) rotateX(180deg);
+  z-index: 9;
+
+}
+
+.projects .right .grid .projectCard:hover .back {
+  transform-style: preserve-3d;
+  -webkit-transform: perspective(600px) rotateX(0deg);
+  transform: perspective(600px) rotateX(0deg);
+  z-index: 9;
+
+}
+
+.projects .right .grid .projectCard .back {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+}
+
+.projects .right .grid .projectCard .back p {
+  padding: 5px;
+}
+
+.projects .right .grid .projectCard .back ul li {
+  display: inline;
+  font-size: 22px;
+  padding: 2px;
+}
+
+.projects .right .grid .projectCard .back ul li a {
+  color: #494949;
+  font-size: 27px;
+  padding: 2px;
+}
+
+.projects .right .grid .projectCard .back ul li a:hover {
+  color: #fff;
+}
+
+@media screen and (max-width: 800px) {
+  .projects .left {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .projects .right {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    height: 200vh;
+  }
+
+  .projects .right .grid {
+    display: grid;
+    grid-template-columns: auto;
+    margin: auto;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    justify-self: center;
+    align-self: center;
+  }
+
+  .projects .right .grid .projectCard {
+    width: 90%;
+    height: 100%;
+    justify-self: center;
+    align-self: center;
+    align-items: center;
+  }
+
+  .projects .right .grid .projectCard .front,
+  .projects .right .grid .projectCard .back {
+    width: 100%;
+    height: 100%;
+    justify-self: center;
+    align-self: center;
+  }
+
+  .projects .right .grid .projectCard .front h1 {
+    font-size: 45px;
+  }
+
+  .projects .right .grid .projectCard .back p {
+    font-size: 18px;
+  }
+
+  .projects .right .grid .projectCard .back ul li {
+    display: inline;
+    font-size: 22px;
+  }
+
+  .projects .right .grid .projectCard .back ul li a {
+    font-size: 25px;
+  }
+}
+
+.exp .left {
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-gap: 40px;
+  padding-left: 40px;
+}
+
+.exp .left .expCard {
+  position: relative;
+  width: 300px;
+  height: 300px;
+  background: #fff;
+  box-shadow: 0 15px 60px rgba(0, 0, 0, 0.5);
+  padding-left: 10px;
+}
+
+.exp .left .expCard .face {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.exp .left .expCard .face.face1 {
+  box-sizing: border-box;
+  padding: 20px;
+  transition: 0.5s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.exp .left .expCard .face1 .content h2 {
+  margin: 0;
+  padding: 10px;
+  color: #000;
+  font-size: 22px;
+}
+
+.exp .left .expCard .face1 .content p {
+  margin: 0;
+  padding: 0;
+  color: #000;
+  font-size: 18px;
+}
+
+.exp .left .expCard .face.face2 {
+  background: #111;
+  transition: 0.5s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.exp .left .expCard:hover .face.face2 {
+  height: 15%;
+}
+
+.exp .left .expCard:hover .face.face2 h2 {
+  font-size: 25px;
+}
+
+.exp .left .expCard .face.face2:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 50%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.exp .left .expCard .face.face2 h2 {
+  margin: 0;
+  padding: 0;
+  font-size: 200px;
+  color: #fff;
+  transition: 0.5s;
+}
+
+.resume .right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.resume .right a {
+  animation: pulse 3s infinite;
+  animation-direction: alternate;
+  font-size: 500px;
+  color: #fff;
+}
+
+@keyframes pulse {
+  0% {
+    font-size: 300px;
+  }
+
+  100% {
+    font-size: 500px;
+  }
+}
