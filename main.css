@@ -357,6 +357,7 @@ section {
 }
 
 .home .right .tiles .tile .tileTextD ul li a {
+    z-index: 100;
     font-size: 40px;
     color: #fff;
     line-height: 80px;
@@ -364,6 +365,7 @@ section {
 }
 
 .home .right .tiles .tile .tileTextD ul li a:hover {
+    z-index: 100;
     color: #494949;
 }
 
