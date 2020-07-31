@@ -635,6 +635,11 @@ section {
     padding: 2px;
 }
 
+.projects .right .grid .projectCard .back ul li i{
+    color: #ffffff; !important;
+}
+
+
 .projects .right .grid .projectCard .back ul li a {
     color: #494949;
     font-size: 27px;
