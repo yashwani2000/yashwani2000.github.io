@@ -881,19 +881,19 @@ section {
     box-shadow: -50px 50px 50px rgba(0, 0, 0, 0.7);
 }
 
-.skills .left ul li:hover:nth-child(1) a {
+#java:hover{
     background: #ED8B00;
 }
 
-.skills .left ul li:hover:nth-child(1) a i {
+#java:hover > i {
     color: #fff;
 }
 
-.skills .left ul li:hover:nth-child(1) a:before {
+#java:hover:before {
     background: #007396;
 }
 
-.skills .left ul li:hover:nth-child(1) a:after {
+#java:hover:after{
     background: #007396;
     color: #fff;
 }
