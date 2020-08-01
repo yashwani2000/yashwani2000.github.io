@@ -882,7 +882,7 @@ section {
 }
 
 #java:hover{
-    background: #ED8B00;
+    background: linear-gradient(to bottom right, #ED8B00 50%, #007396 0%);
 }
 
 #java:hover > i {
@@ -890,7 +890,7 @@ section {
 }
 
 #java:hover:before {
-    background: #007396;
+    background: #ED8B00;
 }
 
 #java:hover:after{
@@ -898,141 +898,301 @@ section {
     color: #fff;
 }
 
-.skills .left ul li:hover:nth-child(2) a {
+#python:hover {
     background: linear-gradient(to bottom right, #4B8BBE, #306998 50%, #FFE873, #FFD43B 0%);
 }
 
-.skills .left ul li:hover:nth-child(2) a i {
+#python:hover > i {
     color: #fff;
 }
 
-.skills .left ul li:hover:nth-child(2) a:before {
+#python:hover:before {
     background: linear-gradient(to bottom right, #4B8BBE, #306998);
 }
 
-.skills .left ul li:hover:nth-child(2) a:after {
+#python:hover:after {
     background: linear-gradient(to bottom right, #FFE873, #FFD43B);
     color: #646464;
 }
 
-.skills .left ul li:hover:nth-child(3) a {
+#js:hover {
     background: #323330;
 }
 
-.skills .left ul li:hover:nth-child(3) a i {
+#js:hover > i {
     color: #f0db4f;
 }
 
-.skills .left ul li:hover:nth-child(3) a:before {
+#js:hover:before {
     background: #323330;
 }
 
-.skills .left ul li:hover:nth-child(3) a:after {
+#js:hover:after {
     background: #323330;
     color: #f0db4f;
 }
 
-.skills .left ul li:hover:nth-child(4) a {
-    background: #fff;
+#css:hover {
+    background: #264de4;
 }
 
-.skills .left ul li:hover:nth-child(4) a i {
-    color: #264de4;
-}
-
-.skills .left ul li:hover:nth-child(4) a:before {
-    background: #f1f1f1;
-}
-
-.skills .left ul li:hover:nth-child(4) a:after {
-    background: #f1f1f1;
-    color: #000;
-}
-
-.skills .left ul li:hover:nth-child(5) a {
-    background: linear-gradient(to bottom right, #e98f4a, #e93d30);
-}
-
-.skills .left ul li:hover:nth-child(5) a i {
+#css:hover > i{
     color: #fff;
 }
 
-.skills .left ul li:hover:nth-child(5) a:before {
+#css:hover:before {
+    background: #264de4;
+}
+
+#css:hover:after {
+    background: #264de4;
+    color: #fff;
+}
+
+#swift:hover {
+    background: linear-gradient(to bottom right, #e98f4a, #e93d30);
+}
+
+#swift:hover > i {
+    color: #fff;
+}
+
+#swift:hover:before {
     background: linear-gradient(to bottom, #e98f4a, #da6d49);
 }
 
-.skills .left ul li:hover:nth-child(5) a:after {
+#swift:hover:after  {
     background: linear-gradient(to right, #da6d49, #e93d30);
     color: #fff;
 }
 
-.skills .left ul li:hover:nth-child(6) a {
-    background: #fff;
+#html:hover {
+    background: #f06529;
 }
 
-.skills .left ul li:hover:nth-child(6) a i {
-    color: #f06529;
+#html:hover > i {
+    color: #fff;
 }
 
-.skills .left ul li:hover:nth-child(6) a:before {
-    background: #f1f1f1;
+#html:hover:before {
+    background: #f06529;
 }
 
-.skills .left ul li:hover:nth-child(6) a:after {
-    background: #f1f1f1;
-    color: #000;
+#html:hover:after {
+    background: #f06529;
+    color: #fff;
 }
 
-.skills .left ul li:hover:nth-child(7) a {
+#terminal:hover {
     background: #000;
 }
 
-.skills .left ul li:hover:nth-child(7) a i {
+#terminal:hover > i {
     color: #00ff00;
 }
 
-.skills .left ul li:hover:nth-child(7) a:before {
+#terminal:hover:before {
     background: #000;
 }
 
-.skills .left ul li:hover:nth-child(7) a:after {
+#terminal:hover:after {
     background: #000;
     color: #00ff00;
 }
 
-.skills .left ul li:hover:nth-child(8) a {
+#php:hover {
     background: #787CB5;
 }
 
-.skills .left ul li:hover:nth-child(8) a i {
-    color: #000;
-}
-
-.skills .left ul li:hover:nth-child(8) a:before {
-    background: #474A8A;
-}
-
-.skills .left ul li:hover:nth-child(8) a:after {
-    background: #474A8A;
-    color: #000;
-}
-
-.skills .left ul li:hover:nth-child(9) a {
-    background: #242c36;
-}
-
-.skills .left ul li:hover:nth-child(9) a i {
+#php:hover > i{
     color: #fff;
 }
 
-.skills .left ul li:hover:nth-child(9) a:before {
+#php:hover:before {
+    background: #787CB5;
+}
+
+#php:hover:after {
+    background: #787CB5;
+    color: #fff;
+}
+
+#unity:hover {
     background: #242c36;
 }
 
-.skills .left ul li:hover:nth-child(9) a:after {
+#unity:hover > i {
+    color: #fff;
+}
+
+#unity:hover:before {
+    background: #242c36;
+}
+
+#unity:hover:after {
     background: #242c36;
     color: #fff;
 }
+
+#matlab:hover {
+    background: linear-gradient(to bottom right, #1774ae, #286a99);
+}
+
+#matlab:hover > i {
+    color: #fff;
+}
+
+#matlab:hover:before {
+    background: #286a99;
+}
+
+#matlab:hover:after  {
+    background: #e98f4a;
+    color: #fff;
+}
+
+#matlab:hover {
+    background: linear-gradient(to bottom right, #286a99 50%, #e98f4a 0%);
+}
+
+#cpp:hover {
+    background: #017fcd;
+}
+
+#cpp:hover > i {
+    color: #fff;
+}
+
+#cpp:hover:before {
+    background: #017fcd;
+}
+
+#cpp:hover:after {
+    background: #017fcd;
+    color: #fff;
+}
+
+ #c:hover {
+     background: #5c6bc0;
+ }
+
+#c:hover > i {
+    color: #fff;
+}
+
+#c:hover:before {
+    background: #5c6bc0;
+}
+
+#c:hover:after {
+    background: #5c6bc0;
+    color: #fff;
+}
+
+#gcloud:hover {
+    background: #4285F4;
+}
+
+#gcloud:hover > i {
+    color: #fff;
+}
+
+#gcloud:hover:before {
+    background: #DB4437;
+}
+
+#gcloud:hover:after {
+    background: #F4B400;
+    color: #fff;
+}
+
+#unreal:hover {
+    background: #4c4c4c;
+}
+
+#unreal:hover > i {
+    color: #fff;
+}
+
+#unreal:hover:before {
+    background: #4c4c4c;
+}
+
+#unreal:hover:after {
+    background: #4c4c4c;
+    color: #fff;
+}
+
+#photoshop:hover {
+    background: #3C327B;
+}
+
+#photoshop:hover > i {
+    color: #8BC3FC;
+}
+
+#photoshop:hover:before {
+    background: #3C327B;
+}
+
+#photoshop:hover:after {
+    background: #3C327B;
+    color: #8BC3FC;
+}
+
+#illustrator:hover {
+    background: #5F4B26;
+}
+
+#illustrator:hover > i {
+    color: #FBBB4D;
+}
+
+#illustrator:hover:before {
+    background: #5F4B26;
+}
+
+#illustrator:hover:after {
+    background: #5F4B26;
+    color: #FBBB4D;
+}
+
+#xd:hover {
+   background: #400a35;
+}
+
+#xd:hover > i {
+    color: #eb0bef;
+}
+
+#xd:hover:before {
+    background: #400a35;
+}
+
+#xd:hover:after {
+    background: #400a35;
+    color: #eb0bef;
+}
+
+#office:hover {
+    background: #F25022;
+}
+
+#office:hover > i {
+    color: #fff;
+}
+
+#office:hover:before {
+    background: #F25022;
+}
+
+#office:hover:after {
+    background: #F25022;
+    color: #fff
+;
+}
+
+
 
 .contact .right ul {
     position: relative;
