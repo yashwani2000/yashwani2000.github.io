@@ -819,7 +819,7 @@ section {
 
 .skills .left ul {
     display: grid;
-    grid-template-columns: auto auto auto;
+    grid-template-columns: auto auto auto auto;
     width: 100%;
     grid-column-gap: 30px;
     grid-row-gap: 80px;
