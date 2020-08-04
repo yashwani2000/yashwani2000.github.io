@@ -24,7 +24,7 @@ html {
 }
 
 section {
-    width: 100%;
+    width: 100vw;
     height: 100vh;
 }
 
@@ -35,7 +35,7 @@ section {
     top: 0;
     background-color: rgba(255, 255, 255, 0);
     height: 10vh;
-    width: 100%;
+    width: 100vw;
 }
 
 .header .logo {
@@ -196,13 +196,13 @@ section {
     box-sizing: border-box;
     color: #F9F6EF;
     height: 100vh;
-    width: 100%;
+    width: 100vw;
 }
 
 .odd .left {
     display: flex;
     float: left;
-    width: 60%;
+    width: 60vw;
     text-align: center;
     height: 100vh;
     justify-content: center;
@@ -232,7 +232,7 @@ section {
 
 .odd .left h1 {
     font-size: 5em;
-    margin-right: 5em;
+    margin-right: 2em;
 }
 
 .odd .right {
@@ -250,8 +250,10 @@ section {
     position: relative;
     width: 30vh;
     height: 40vh;
-    min-width: 60px;
-    min-height: 80px;
+    min-width: 150px;
+    min-height: 200px;
+    max-width: 80vw;
+    max-height: 90vh;
     transform-style: preserve-3d;
     border-radius: 20px;
     margin-top: 30vh;
