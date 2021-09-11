@@ -10,7 +10,7 @@ export default function Home() {
             <div className={"content"}>
                 <h2>Hi, I'm Yash</h2>
                 <TypeWriterEffect
-                    multiText={["Student", "Electrical Engineer", "Computer Scientist", "Undergraduate Researcher", "Intern", ""]}
+                    multiText={["Student", "Web Developer", "Machine Learning Enthusiast", "Undergraduate Researcher", "Intern", "Computer Scientist", "Electrical Engineer"]}
                     hideCursorAfterText={true} cursorColor={"white"} typeSpeed={50}/>
                 <p> Currently a student at the University of Wisconsin Madison, double majoring in Electrical
                     Engineering and Computer Science. I am looking for Internship opportunities in the fields of
