@@ -1,8 +1,6 @@
 import {Suspense, useRef} from "react";
-import {Canvas, useLoader, useFrame} from "@react-three/fiber";
+import {Canvas, useFrame} from "@react-three/fiber";
 import './Background.css';
-import {TextureLoader} from "three";
-import NormalMap from './textures/NormalMap.png'
 import * as THREE from "three"
 
 

@@ -84,7 +84,7 @@ header ul li a svg {
         padding: 50px 10px 10px;
     }
 
-    .container {
+    .base-container {
         flex-direction: column;
         height: auto;
         padding: 20px;
