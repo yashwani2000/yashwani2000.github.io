@@ -1,14 +1,16 @@
-.container {
+.home-container {
+    display: flex;
+    position: fixed;
+    width: calc(100% - 100px);
+    min-height: calc(100vh - 280px);
+    min-width: 300px;
     justify-content: space-between;
     align-items: center;
     padding: 50px;
-    display: flex;
 }
 
-
 .content {
-    /*background-color: rgba(255,0,0,0.1);*/
-    transform: translateX(-100px);
+    transform: translateX(-50px);
     max-width: 700px;
     box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
     border-radius: 20px;

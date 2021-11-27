@@ -8,12 +8,13 @@ import Resume from "./Resume";
 import Contact from "./Contact";
 import Home from "./Home";
 import Work from "./Work";
-import logo from "./face3.png";
+import logo from "./YW.png";
 import {library} from '@fortawesome/fontawesome-svg-core'
-import {fab} from '@fortawesome/free-brands-svg-icons'
-import {faLock} from "@fortawesome/free-solid-svg-icons";
+import {fab, faPython} from '@fortawesome/free-brands-svg-icons'
+import {faLock, faChalkboardTeacher, faPizzaSlice, faBolt, faHome} from "@fortawesome/free-solid-svg-icons";
+import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 
-library.add(fab, faLock)
+library.add(fab, faLock, faChalkboardTeacher, faPizzaSlice, faBolt, faPython, faHome)
 
 export default function App() {
     let three = false;
@@ -27,10 +28,12 @@ export default function App() {
         return (
             <section>
                 <Background/>
-                <div className={"container"}>
-                    <Router basename={process.env.PUBLIC_URL}>
+                <Router basename={process.env.PUBLIC_URL}>
+                    <div className={"base-container"}>
                         <header>
-                            <Link to="/"> <img className={"logo"} src={logo} alt={"Logo"}/></Link>
+                            <ul>
+                                <li><Link to="/"><FontAwesomeIcon icon={"home"} size="1.5x"/></Link></li>
+                            </ul>
                             <ul>
                                 <li><Link to="/projects">Projects</Link></li>
                                 <li><Link to="/work">Work</Link></li>
@@ -39,16 +42,16 @@ export default function App() {
                                 <li><Link to="/contact">Contact</Link></li>
                             </ul>
                         </header>
-                        <Switch>
-                            <Route path="/projects" component={Projects}/>
-                            <Route path="/work" component={Work}/>
-                            <Route path="/skills" component={Skills}/>
-                            <Route path="/resume" component={Resume}/>
-                            <Route path="/contact" component={Contact}/>
-                            <Route path="/" component={Home}/>
-                        </Switch>
-                    </Router>
-                </div>
+                    </div>
+                    <Switch>
+                        <Route path="/projects" component={Projects}/>
+                        <Route path="/work" component={Work}/>
+                        <Route path="/skills" component={Skills}/>
+                        <Route path="/resume" component={Resume}/>
+                        <Route path="/contact" component={Contact}/>
+                        <Route path="/" component={Home}/>
+                    </Switch>
+                </Router>
             </section>
         );
     }

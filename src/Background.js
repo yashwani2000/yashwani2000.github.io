@@ -134,7 +134,17 @@ function Lights() {
 
 export default function Background() {
     return (
-        <Canvas style={{position: 'absolute', top: '0', left: '0', height: '100vh', zIndex: "-1"}}
+        <Canvas style={{
+            position: 'fixed',
+            top: '0',
+            left: '0',
+            height: '100vh',
+            zIndex: "-1",
+            width: "100vw",
+            overflow: "hidden",
+            minHeight: "100vh",
+            minWidth: "100vw"
+        }}
                 camera={{args: [27, window.innerWidth / window.innerHeight, 1, 3500], position: [0, 0, 1100]}}>
             < color attach="background" args={["#050505"]}/>
             <fog attach="fog" args={["#050505", 2000, 3500]}/>

@@ -1,12 +1,14 @@
 import React from "react";
 import './Work.css'
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
+import wipi_logo from './wipi.png'
+
 
 class WorkCard extends React.Component {
     render() {
         let logo;
         if (this.props.fa_b) {
-            logo = <FontAwesomeIcon icon={this.props.logo} size="2x" />
+            logo = <FontAwesomeIcon icon={this.props.logo} size="2x"/>
         } else {
             logo = <img src={this.props.logo} alt={"logo"}/>
         }
@@ -27,9 +29,9 @@ export default function Work() {
     let exps = {
         "experiences": [
             {
-                "name": "Undergraduate Researcher",
-                "desc": "Wisconsin Privacy and Security Group",
-                "logo": "lock",
+                "name": "Peer Mentor",
+                "desc": "Computer Graphics (CS 559)",
+                "logo": "chalkboard-teacher",
                 "fa_b": true,
                 "color": "rgba(255, 255, 255, 0.1 )",
                 "z": 0
@@ -45,23 +47,23 @@ export default function Work() {
             {
                 "name": "Undergraduate Researcher",
                 "desc": "Wisconsin Privacy and Security Group",
-                "logo": "lock",
-                "fa_b": true,
+                "logo": wipi_logo,
+                "fa_b": false,
                 "color": "rgba(0, 0, 0, 0.05 )",
                 "z": 2
             },
             {
-                "name": "Undergraduate Researcher",
-                "desc": "Wisconsin Privacy and Security",
-                "logo": "lock",
+                "name": "Software Engineering Intern",
+                "desc": "Crave Eats",
+                "logo": "pizza-slice",
                 "fa_b": true,
                 "color": "rgba(0, 255, 0, 0.1 )",
                 "z": 1
             },
             {
-                "name": "Undergraduate Researcher",
-                "desc": "Wisconsin Privacy and Security Group",
-                "logo": "lock",
+                "name": "Undergraduate Student Assistant",
+                "desc": "Electrical and Electronic Circuits (ECE 376)",
+                "logo": "bolt",
                 "fa_b": true,
                 "color": "rgba(0, 0, 255, 0.1 )",
                 "z": 0
@@ -79,9 +81,11 @@ export default function Work() {
 
     return (
         <>
-            <div className={"wcontent"}>
-                <div className={"cards"}>
-                    {cards}
+            <div className={"work-container"}>
+                <div className={"wcontent"}>
+                    <div className={"cards"}>
+                        {cards}
+                    </div>
                 </div>
             </div>
         </>
