@@ -17,10 +17,13 @@
 
 .cards {
     display: flex;
+    justify-content: center;
     flex-wrap: wrap;
+    margin-right: -3em;
 }
 
 .card {
+    min-width: 300px;
     max-width: 1000px;
     min-height: 200px;
     box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
@@ -33,7 +36,7 @@
     padding-top: 30px;
     flex: 1;
     margin-left: -3rem;
-    float: left;
+    /*float: left;*/
     transition: 0.5s;
     display: flex;
     flex-direction: column;

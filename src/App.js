@@ -8,7 +8,6 @@ import Resume from "./Resume";
 import Contact from "./Contact";
 import Home from "./Home";
 import Work from "./Work";
-import logo from "./YW.png";
 import {library} from '@fortawesome/fontawesome-svg-core'
 import {fab, faPython} from '@fortawesome/free-brands-svg-icons'
 import {faLock, faChalkboardTeacher, faPizzaSlice, faBolt, faHome} from "@fortawesome/free-solid-svg-icons";
