@@ -137,7 +137,7 @@ export default function Background() {
             top: '0',
             left: '0',
             height: '100vh',
-            zIndex: "-1",
+            zIndex: "-999",
             width: "100vw",
             overflow: "hidden",
             minHeight: "100vh",

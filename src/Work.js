@@ -4,7 +4,13 @@ import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
 import wipi_logo from './wipi.png'
 
 
+
+
 class WorkCard extends React.Component {
+
+
+
+
     render() {
         let logo;
         if (this.props.fa_b) {
@@ -12,15 +18,13 @@ class WorkCard extends React.Component {
         } else {
             logo = <img src={this.props.logo} alt={"logo"}/>
         }
-        return (
-            <>
+        return (<>
                 <div className={"card"} style={{backgroundColor: this.props.color, zIndex: this.props.z}}>
                     {logo}
                     <h2>{this.props.name}</h2>
                     <p>{this.props.desc}</p>
                 </div>
-            </>
-        )
+            </>)
     }
 }
 
@@ -58,7 +62,7 @@ export default function Work() {
                 "logo": "pizza-slice",
                 "fa_b": true,
                 "color": "rgba(0, 255, 0, 0.1 )",
-                "z": 1
+                "z": 3
             },
             {
                 "name": "Undergraduate Student Assistant",
@@ -66,28 +70,33 @@ export default function Work() {
                 "logo": "bolt",
                 "fa_b": true,
                 "color": "rgba(0, 0, 255, 0.1 )",
-                "z": 0
+                "z": 4
             },
         ]
     }
+
+    // let exps = await fetch("./data.json")
+    //     .then(response => {
+    //         return response.json();
+    //     })
+    //     .then(data => {
+    //         console.log(data)
+    //
+    //     });
+    //
+    // console.log(exps)
     let cards = []
 
     for (const exp of exps.experiences) {
-        cards.push(
-            <WorkCard key={exp.name} fa_b={exp.fa_b} name={exp.name} desc={exp.desc} logo={exp.logo}
-                      color={exp.color} z={exp.z}/>
-        )
+        cards.push(<WorkCard key={exp.name} fa_b={exp.fa_b} name={exp.name} desc={exp.desc} logo={exp.logo}
+                             color={exp.color} z={exp.z}/>)
     }
 
-    return (
-        <>
-            <div className={"work-container"}>
-                <div className={"wcontent"}>
-                    <div className={"cards"}>
-                        {cards}
-                    </div>
-                </div>
+    return (<>
+        <div className={"work-container"}>
+            <div className={"cards"}>
+                {cards}
             </div>
-        </>
-    );
+        </div>
+    </>);
 }

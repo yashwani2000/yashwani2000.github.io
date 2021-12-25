@@ -15,23 +15,20 @@ import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 
 library.add(fab, faLock, faChalkboardTeacher, faPizzaSlice, faBolt, faPython, faHome)
 
+// TODO: add JSON integration
+
 export default function App() {
     let three = false;
     if (three) {
-        return (
-            <section>
-                <Background/>
-            </section>
-        )
+        return (<Background/>)
     } else {
-        return (
-            <section>
+        return (<>
                 <Background/>
-                <Router basename={process.env.PUBLIC_URL}>
-                    <div className={"base-container"}>
+                <div className={"base"}>
+                    <Router basename={process.env.PUBLIC_URL}>
                         <header>
                             <ul>
-                                <li><Link to="/"><FontAwesomeIcon icon={"home"} size="1.5x"/></Link></li>
+                                <li><Link to="/"><FontAwesomeIcon icon={"home"} size="1x"/></Link></li>
                             </ul>
                             <ul>
                                 <li><Link to="/projects">Projects</Link></li>
@@ -41,17 +38,16 @@ export default function App() {
                                 <li><Link to="/contact">Contact</Link></li>
                             </ul>
                         </header>
-                    </div>
-                    <Switch>
-                        <Route path="/projects" component={Projects}/>
-                        <Route path="/work" component={Work}/>
-                        <Route path="/skills" component={Skills}/>
-                        <Route path="/resume" component={Resume}/>
-                        <Route path="/contact" component={Contact}/>
-                        <Route path="/" component={Home}/>
-                    </Switch>
-                </Router>
-            </section>
-        );
+                        <Switch>
+                            <Route path="/projects" component={Projects}/>
+                            <Route path="/work" component={Work}/>
+                            <Route path="/skills" component={Skills}/>
+                            <Route path="/resume" component={Resume}/>
+                            <Route path="/contact" component={Contact}/>
+                            <Route path="/" component={Home}/>
+                        </Switch>
+                    </Router>
+                </div>
+            </>);
     }
 }

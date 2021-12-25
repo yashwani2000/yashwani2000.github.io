@@ -7,8 +7,8 @@ export default function Home() {
 
     return (
         <>
-            <div className={"home-container"}>
-                <div className={"content"}>
+            <div className={"home_container"}>
+                <div className={"home_tile"}>
                     <h2>Hi, I'm Yash</h2>
                     <TypeWriterEffect
                         multiText={["Student", "Web Developer", "Machine Learning Enthusiast", "Undergraduate Researcher", "Intern", "Computer Scientist", "Electrical Engineer"]}
