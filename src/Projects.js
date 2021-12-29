@@ -23,7 +23,7 @@ export class Projects extends React.Component {
         }
 
         for (const proj of projs.projects) {
-            projects.push(<ProjectCard color={proj.color} title={proj.title}
+            projects.push(<ProjectCard key={proj.title} color={proj.color} title={proj.title}
                                        desc={proj.desc} longDesc={proj.long_desc}
                                        createModal={this.props.createModal}/>)
         }
