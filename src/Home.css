@@ -4,7 +4,7 @@
     min-width: 90vw;
     min-height: 75vh;
     z-index: -1;
-    background: rgba(100, 100, 100, 0.5);
+    background: rgba(100, 100, 100, 0.2);
     box-shadow: 0 15px 35px rgba(255, 255, 255, 0.05);
     border-radius: 20px;
     display: flex;
@@ -48,9 +48,9 @@
 
 @keyframes animate {
     0%, 100% {
-        transform: translateY(10px);
+        transform: translateY(-10px);
     }
     50% {
-        transform: translateY(60px);
+        transform: translateY(40px);
     }
 }

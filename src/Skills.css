@@ -40,7 +40,7 @@
     color: white;
     font-size: 2em;
     padding: 10px;
-    font-weight: lighter;
+    font-weight: normal;
 }
 
 .skill_card p {
@@ -49,13 +49,7 @@
 
 }
 
-
-.fa-python {
-    color: #ffffff;
-}
-
-.fa-java {
-    color: #ffffff;
-
+.skill_card span svg {
+    color: #fff;
 }
 
