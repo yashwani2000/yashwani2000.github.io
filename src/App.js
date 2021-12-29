@@ -1,8 +1,8 @@
 import './App.css';
-import {React} from "react";
+import React from "react";
 import Background from "./Background";
 import {BrowserRouter as Router, Route, Switch, Link} from "react-router-dom";
-import Projects from "./Projects";
+import {Projects} from "./Projects";
 import Skills from "./Skills";
 import Resume from "./Resume";
 import Contact from "./Contact";
@@ -12,17 +12,49 @@ import {library} from '@fortawesome/fontawesome-svg-core'
 import {fab, faPython} from '@fortawesome/free-brands-svg-icons'
 import {faLock, faChalkboardTeacher, faPizzaSlice, faBolt, faHome} from "@fortawesome/free-solid-svg-icons";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
+import {Modal} from "./Modal";
 
 library.add(fab, faLock, faChalkboardTeacher, faPizzaSlice, faBolt, faPython, faHome)
 
 // TODO: add JSON integration
 
-export default function App() {
-    let three = false;
-    if (three) {
-        return (<Background/>)
-    } else {
-        return (<>
+export default class App extends React.Component {
+
+    constructor(props) {
+        super(props);
+        this.state = {
+            showModal: false, modalTitle: "", modalDesc: ""
+        }
+        this.createModal = this.createModal.bind(this);
+        this.closeModal = this.closeModal.bind(this);
+        // this.buttonClick = this.buttonClick.bind(this);
+    }
+
+    closeModal() {
+        this.setState({
+            showModal: false
+        })
+    }
+
+    createModal(title, desc) {
+        this.setState({
+            showModal: true, modalTitle: title, modalDesc: desc
+        })
+    }
+
+    // buttonClick() {
+    //     this.setState({
+    //         showModal: true, modalTitle: "title", modalDesc: "desc"
+    //     })
+    //
+    // }
+
+    render() {
+        let three = false;
+        if (three) {
+            return (<Background/>)
+        } else {
+            return (<>
                 <Background/>
                 <div className={"base"}>
                     <Router basename={process.env.PUBLIC_URL}>
@@ -47,7 +79,10 @@ export default function App() {
                             <Route path="/" component={Home}/>
                         </Switch>
                     </Router>
+                    <Modal show={this.state.showModal} title={this.state.modalTitle} desc={this.state.modalDesc}
+                           close={this.closeModal}/>
                 </div>
             </>);
+        }
     }
 }
