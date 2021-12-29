@@ -1,17 +1,10 @@
-.work-container {
-    /*position: absolute;*/
-    /*width: calc(100% - 200px);*/
-    /*min-height: calc(100vh - 280px);*/
-    /*min-width: 300px;*/
-    /*background: rgba(100, 100, 100, 0.5);*/
-    /*box-shadow: 0 15px 35px rgba(255, 255, 255, 0.05);*/
-    /*border-radius: 20px;*/
+.work_container {
     position: absolute;
     top: 16vh;
     min-width: 90vw;
     min-height: 75vh;
     max-height: 75vh;
-    z-index: -1;
+    z-index: 2;
     background: rgba(100, 100, 100, 0.5);
     box-shadow: 0 15px 35px rgba(255, 255, 255, 0.05);
     border-radius: 20px;
@@ -21,7 +14,7 @@
     overflow: scroll;
 }
 
-.cards {
+.work_cards {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -29,7 +22,7 @@
     margin-right: -3em;
 }
 
-.card {
+.work_card {
     min-width: 300px;
     max-width: 1000px;
     min-height: 200px;
@@ -43,32 +36,31 @@
     padding-top: 30px;
     flex: 1;
     margin-left: -3rem;
-    /*float: left;*/
     transition: 0.5s;
     display: flex;
     flex-direction: column;
 }
 
-.card h2 {
+.work_card h2 {
     color: #ededed;
     font-size: 17px;
 }
 
-.card p {
+.work_card p {
     color: #b0b0b0;
 }
 
-.card img {
+.work_card img {
     height: 50px;
     width: 50px;
 }
 
-.card svg {
+.work_card svg {
     height: 50px;
     width: 50px;
 }
 
-.card:hover {
+.work_card:hover {
     transition: 0.5s;
     transform: translateY(-2rem);
     z-index: 3 !important;

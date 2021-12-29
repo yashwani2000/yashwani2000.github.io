@@ -4,11 +4,27 @@ import './Projects.css'
 export class Projects extends React.Component {
 
     render() {
-        // TODO: add projects
         let projects = []
-        for (let i = 0; i < 5; i++) {
-            projects.push(<ProjectCard color={"rgba(0,0,0,0.1)"} title={"Adversarial Machine Learning for KMeans"}
-                                       desc={"Performs a black box attack on KMeans models."} longDesc={"LongDesc"}
+
+        let projs = {
+            "projects": [{
+                "title": "Curate",
+                "desc": "Engineered a multiplayer iOS game for Amazon",
+                "long_desc": "chalkboard-teacher",
+                "color": "rgba(255, 255, 255, 0.1 )",
+                "z": 0
+            }, {
+                "title": "Adversarial Machine Learning for KMeans",
+                "desc": "Designed a black-box attack that uses data poisoning to increase mis-classifications in a KMeans implementation",
+                "long_desc": "chalkboard-teacher",
+                "color": "rgba(255, 255, 255, 0.1 )",
+                "z": 0
+            },]
+        }
+
+        for (const proj of projs.projects) {
+            projects.push(<ProjectCard color={proj.color} title={proj.title}
+                                       desc={proj.desc} longDesc={proj.long_desc}
                                        createModal={this.props.createModal}/>)
         }
 

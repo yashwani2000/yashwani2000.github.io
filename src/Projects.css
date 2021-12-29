@@ -31,6 +31,11 @@
     border-radius: 15px;
 }
 
+.project_card:hover {
+    transition: 0.5s;
+    transform: translateY(-20px);
+}
+
 .project_card h1 {
     font-size: 1.2em;
     color: white;
