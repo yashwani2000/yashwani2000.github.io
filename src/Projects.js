@@ -29,7 +29,7 @@ export class Projects extends React.Component {
         }
 
         return (<>
-            <div className={"projects_container"}>
+            <div className={"projects_container container"}>
                 <ul>
                     {projects}
                 </ul>

@@ -11,7 +11,7 @@ export default function Skills() {
             "desc": "Pytorch, TensorFlow, numpy, numba, seaborn, skikit-Learn, matplotlib, gym, openai, opencv, stable_baselines3",
             "logo": ["fab", "python"],
             "fa_b": true,
-            "color": "rgba(255,255,0,0.1)"
+            "color": "rgba(0,0,0,0.1)"
         }, {
             "name": "C/C++",
             "desc": "OpenMP, Intel oneAPI",
@@ -82,7 +82,7 @@ export default function Skills() {
     }
 
     return (<>
-        <div className={"skills_container"}>
+        <div className={"skills_container container"}>
             <ul>
                 {cards}
             </ul>

@@ -71,7 +71,7 @@ export default function Work() {
     }
 
     return (<>
-        <div className={"work_container"}>
+        <div className={"work_container container"}>
             <div className={"work_cards"}>
                 {cards}
             </div>

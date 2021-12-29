@@ -7,7 +7,7 @@ export default function Home() {
 
     return (
         <>
-            <div className={"home_container"}>
+            <div className={"home_container container"}>
                 <div className={"home_tile"}>
                     <h2>Hi, I'm Yash</h2>
                     <TypeWriterEffect

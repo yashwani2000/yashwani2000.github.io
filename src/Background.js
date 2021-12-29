@@ -1,6 +1,5 @@
 import {Suspense, useRef} from "react";
 import {Canvas, useFrame} from "@react-three/fiber";
-import './Background.css';
 import * as THREE from "three"
 
 
