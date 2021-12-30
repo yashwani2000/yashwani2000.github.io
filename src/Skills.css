@@ -44,3 +44,9 @@
     color: #fff;
 }
 
+.skill_card span img {
+    max-height: 2em;
+    max-width: 2em;
+    filter: brightness(0) invert(1);
+}
+
