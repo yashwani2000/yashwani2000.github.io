@@ -1,7 +1,7 @@
 import './App.css';
 import React from "react";
 import Background from "./Background";
-import {BrowserRouter as Router, Route, Switch, Link} from "react-router-dom";
+import {HashRouter as Router, Route, Switch, Link} from "react-router-dom";
 import {Projects} from "./Projects";
 import Skills from "./Skills";
 import Resume from "./Resume";
