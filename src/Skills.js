@@ -2,6 +2,8 @@ import React from "react";
 import './Skills.css'
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
 
+// TODO: Find apt logos
+// TODO: Add all skills
 
 export default function Skills() {
 
@@ -72,6 +74,8 @@ export default function Skills() {
             "name": "System Verilog", "desc": "", "logo": ["fab", "apple"], "fa_b": true, "color": "rgba(0,0,0,0.2)"
         },{
             "name": "zsh", "desc": "", "logo": ["fas", "terminal"], "fa_b": true, "color": "rgba(0,0,0,0.2)"
+        },{
+            "name": "Docker", "desc": "", "logo": ["fab", "docker"], "fa_b": true, "color": "rgba(0,0,0,0.2)"
         },]
     }
     let cards = []

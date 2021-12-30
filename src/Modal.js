@@ -34,8 +34,12 @@ export class Modal extends React.Component {
             <div className={"modal"}>
                 <div className={"modal_body"} ref={this.setWrapperRef}>
                     <div className={"modal_content"}>
-                        <h1>{this.props.title}</h1>
-                        <p>{this.props.desc}</p>
+                        <div className={"modal_header"}>
+                            <h1>{this.props.title}</h1>
+                        </div>
+                        <div className={"modal_data"}>
+                            <p>{this.props.desc}</p>
+                        </div>
                     </div>
                 </div>
             </div>

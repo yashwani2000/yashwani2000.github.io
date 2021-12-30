@@ -52,7 +52,7 @@
 .work_card:hover {
     transition: 0.5s;
     transform: translateY(-2rem);
-    z-index: 3 !important;
+    z-index: 5 !important;
 }
 
 .fa-chalkboard-teacher {

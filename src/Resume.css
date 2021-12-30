@@ -1,0 +1,92 @@
+.resume_container {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.resume_container ul {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.resume_tiles {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    grid-gap: 4rem;
+}
+
+.resume_tile {
+    min-width: 300px;
+    max-width: 1000px;
+    min-height: 200px;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(20px);
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
+    border-left: 1px solid rgba(255, 255, 255, 0.5);
+    flex: 1;
+    transition: 0.5s;
+    display: flex;
+    flex-direction: column;
+    transform-style: preserve-3d;
+    transform: rotate(15deg) skew(-20deg);
+    justify-content: center;
+    align-items: center;
+}
+
+.resume_tile:before {
+    content: '';
+    position: absolute;
+    bottom: -13px;
+    left: -1px;
+    width: 100%;
+    height: 10px;
+    backdrop-filter: blur(20px);
+    background: inherit;
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
+    border-left: 1px solid rgba(255, 255, 255, 0.5);
+    transform-origin: top;
+    transform: skewX(41deg);
+}
+
+.resume_tile:after {
+    content: '';
+    position: absolute;
+    top: 10px;
+    right: -10px;
+    width: 9px;
+    height: 100%;
+    backdrop-filter: blur(20px);
+    background: inherit;
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
+    border-left: 1px solid rgba(255, 255, 255, 0.5);
+    transition: 0.5s;
+    transform-origin: right;
+    transform: skewY(49deg);
+}
+
+.resume_tile h1 {
+    display: inline;
+    color: white;
+    padding: 10px;
+}
+
+.resume_tile svg {
+    padding-top: 10px;
+    color: white;
+}
+
+.resume_tile span svg {
+    color: white;
+}
+
+.resume_tile:hover {
+    transform: skewY(-1deg);
+}
