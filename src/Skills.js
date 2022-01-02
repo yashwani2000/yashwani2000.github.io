@@ -67,7 +67,7 @@ export default function Skills() {
             "fa_b": false,
             "color": "rgba(0,0,0,0.2)"
         }, {
-            "name": "LT Spice", "desc": "", "logo": "https://pbs.twimg.com/profile_images/839168408490913792/ukNPeWwa_400x400.jpg", "fa_b": false, "color": "rgba(0,0,0,0.2)"
+            "name": "LT Spice", "desc": "", "logo": ["fas", "charging-station"], "fa_b": true, "color": "rgba(0,0,0,0.2)"
         }, {
             "name": "System Verilog", "desc": "", "logo": ["fas", "microchip"], "fa_b": true, "color": "rgba(0,0,0,0.2)"
         },{

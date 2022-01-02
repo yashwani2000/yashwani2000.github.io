@@ -11,12 +11,12 @@ import {Work} from "./Work";
 import {library} from '@fortawesome/fontawesome-svg-core'
 import {fab, faPython} from '@fortawesome/free-brands-svg-icons'
 import {
-    faLock, faChalkboardTeacher, faPizzaSlice, faBolt, faHome, faTerminal, faFilePdf, faDownload, faGlobe, faLink, faRobot, faMicrochip
+    faLock, faChalkboardTeacher, faPizzaSlice, faBolt, faHome, faTerminal, faFilePdf, faDownload, faGlobe, faLink, faRobot, faMicrochip, faChargingStation
 } from "@fortawesome/free-solid-svg-icons";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {Modal} from "./Modal";
 
-library.add(fab, faLock, faChalkboardTeacher, faPizzaSlice, faBolt, faPython, faHome, faTerminal, faFilePdf, faDownload, faGlobe, faLink, faRobot, faMicrochip)
+library.add(fab, faLock, faChalkboardTeacher, faPizzaSlice, faBolt, faPython, faHome, faTerminal, faFilePdf, faDownload, faGlobe, faLink, faRobot, faMicrochip,faChargingStation)
 
 // TODO: add JSON integration
 // TODO: enable Modals in Projects and Work
