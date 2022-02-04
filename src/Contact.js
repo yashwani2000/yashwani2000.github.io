@@ -52,6 +52,14 @@ export class Contact extends React.Component {
                 "color": "rgba(0,0,0, 0.75)",
                 "z": 0,
                 "url": "mailto:ywani@wisc.edu"
+            },{
+                "name": "GitHub",
+                "desc": "View GitHub Profile",
+                "logo": ["fab", "github"],
+                "fa_b": true,
+                "color": "rgba(40,40,40, 0.75)",
+                "z": 0,
+                "url": "https://github.com/yashwani2000"
             }]
         }
 

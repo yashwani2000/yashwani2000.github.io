@@ -28,7 +28,7 @@
     transition: 0.5s;
     display: flex;
     flex-direction: column;
-    cursor: help;
+    cursor: pointer;
 }
 
 .contact_card h2 {
@@ -54,7 +54,7 @@
     transition: 0.5s;
     transform: translateY(-2rem);
     z-index: 5 !important;
-    cursor: help;
+    cursor: pointer;
 }
 
 .fa-linkedin-in {
@@ -63,5 +63,8 @@
 
 .fa-envelope {
     color: white;
+}
 
+.fa-github{
+    color: white;
 }
