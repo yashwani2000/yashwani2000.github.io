@@ -1,9 +1,9 @@
-.resume_container {
+.contact_container {
     display: flex;
     justify-content: center;
 }
 
-.resume_cards {
+.contact_cards {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -11,7 +11,7 @@
     margin-right: -3em;
 }
 
-.resume_card {
+.contact_card {
     min-width: 300px;
     max-width: 1000px;
     min-height: 200px;
@@ -24,34 +24,52 @@
     padding-left: 20px;
     padding-top: 30px;
     flex: 1;
-    margin: 2rem;
-    /*margin-left: rem;*/
+    margin: 1rem;
     transition: 0.5s;
     display: flex;
     flex-direction: column;
 }
 
-.resume_card h2 {
+.contact_card h2 {
     color: #ededed;
     font-size: 17px;
 }
 
-.resume_card p {
+.contact_card p {
     color: #b0b0b0;
 }
 
-.resume_card img {
+.contact_card img {
     height: 50px;
     width: 50px;
 }
 
-.resume_card svg {
+.contact_card svg {
     height: 50px;
     width: 50px;
 }
 
-.resume_card:hover {
+.contact_card:hover {
     transition: 0.5s;
     transform: translateY(-2rem);
     z-index: 5 !important;
+}
+
+.contact_button {
+    background: white;
+    text-decoration: none;
+    font-weight: 500;
+    padding: 8px 15px;
+    border-radius: 15px;
+    color: black;
+    font-size: 20px;
+}
+
+.fa-linkedin-in {
+    color: white;
+}
+
+.fa-envelope {
+    color: white;
+
 }

@@ -4,6 +4,7 @@ import './Projects.css'
 export class Projects extends React.Component {
 
     render() {
+
         let projects = []
 
         let projs = {
