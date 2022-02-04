@@ -51,7 +51,7 @@ export default function Skills() {
         }, {
             "name": "ROS", "desc": "", "logo": ["fas", "robot"], "fa_b": true, "color": "rgba(0,0,0,0.2)"
         }, {
-            "name": "UE4", "desc": "", "logo": "https://cdn.icon-icons.com/icons2/2389/PNG/512/unreal_engine_logo_icon_144771.png", "fa_b": false, "color": "rgba(0,0,0,0.2)"
+            "name": "UE4", "desc": "", "logo": "https://upload.wikimedia.org/wikipedia/commons/d/da/Unreal_Engine_Logo.svg", "fa_b": false, "color": "rgba(0,0,0,0.2)"
         }, {
             "name": "Unity", "desc": "Vuforia", "logo": ["fab", "unity"], "fa_b": true, "color": "rgba(0,0,0,0.2)"
         }, {

@@ -21,7 +21,7 @@ class ContactCard extends React.Component {
             logo = <img src={this.props.logo} alt={"logo"}/>
         }
         return (<>
-            <div className={"resume_card"} onClick={this.handleClick}
+            <div className={"contact_card"} onClick={this.handleClick}
                  style={{backgroundColor: this.props.color, zIndex: this.props.z}}>
                 {logo}
                 <h2>{this.props.name}</h2>

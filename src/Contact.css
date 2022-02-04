@@ -28,10 +28,11 @@
     transition: 0.5s;
     display: flex;
     flex-direction: column;
+    cursor: help;
 }
 
 .contact_card h2 {
-    color: #ededed;
+    color: #fff;
     font-size: 17px;
 }
 
@@ -53,16 +54,7 @@
     transition: 0.5s;
     transform: translateY(-2rem);
     z-index: 5 !important;
-}
-
-.contact_button {
-    background: white;
-    text-decoration: none;
-    font-weight: 500;
-    padding: 8px 15px;
-    border-radius: 15px;
-    color: black;
-    font-size: 20px;
+    cursor: help;
 }
 
 .fa-linkedin-in {

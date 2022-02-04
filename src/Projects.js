@@ -11,11 +11,14 @@ export class Projects extends React.Component {
             "projects": [{
                 "title": "Curate",
                 "desc": "Engineered a multiplayer iOS game for Amazon",
-                "long_desc": "chalkboard-teacher",
+                "long_desc": "- Engineered a multiplayer iOS game for Amazon (CS-Capstone)\n" +
+                    "- Team lead and Scrum Master\n" +
+                    "- Developed the app in an agile manner with weekly code sprints\n" +
+                    "- Utilized SwiftUI, UIKit and GameKit.",
                 "color": "rgba(255, 255, 255, 0.1 )",
                 "z": 0
             }, {
-                "title": "Adversarial Machine Learning for KMeans",
+                "title": "AML - KMeans",
                 "desc": "Designed a black-box attack that uses data poisoning to increase mis-classifications in a KMeans implementation",
                 "long_desc": "chalkboard-teacher",
                 "color": "rgba(255, 255, 255, 0.1 )",

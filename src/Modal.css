@@ -13,8 +13,8 @@
 }
 
 .modal_body {
-    min-height: 90vh;
-    min-width: 70vw;
+    min-height: 40vh;
+    width: 70vw;
     z-index: 5;
     background: rgba(255, 255, 255, 0.1);
     box-shadow: 0 15px 35px rgba(0, 0, 0, 0.05);
@@ -32,15 +32,18 @@
     padding-top: 30px;
     color: white;
     font-size: 2.5em;
+    text-align:center;
 }
-
 
 .modal_data {
     display: flex;
+    margin: 1rem;
 }
 .modal_data p {
+    white-space: pre-line;
     align-items: center;
     color: white;
     padding-top: 10px;
     font-size: 1.5em;
+    text-align:center;
 }
