@@ -41,7 +41,8 @@
 }
 .modal_data p {
     white-space: pre-line;
-    align-items: center;
+    float: left;
+    /*align-items: start;*/
     color: white;
     padding-top: 10px;
     font-size: 1.5em;

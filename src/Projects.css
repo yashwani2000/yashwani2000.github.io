@@ -20,11 +20,13 @@
     background: rgba(0, 0, 0, 0.1);
     box-shadow: 5px 15px 35px rgba(0, 0, 0, 1);
     border-radius: 15px;
+    cursor: pointer;
 }
 
 .project_card:hover {
     transition: 0.5s;
     transform: translateY(-20px);
+    cursor: pointer;
 }
 
 .project_card h1 {

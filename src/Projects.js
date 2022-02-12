@@ -10,18 +10,15 @@ export class Projects extends React.Component {
         let projs = {
             "projects": [{
                 "title": "Curate",
-                "desc": "Engineered a multiplayer iOS game for Amazon",
-                "long_desc": "- Engineered a multiplayer iOS game for Amazon (CS-Capstone)\n" +
-                    "- Team lead and Scrum Master\n" +
-                    "- Developed the app in an agile manner with weekly code sprints\n" +
-                    "- Utilized SwiftUI, UIKit and GameKit.",
-                "color": "rgba(255, 255, 255, 0.1 )",
+                "desc": "Engineered a multiplayer iOS game for Amazon (CS-Capstone)",
+                "long_desc": "Engineered a multiplayer iOS game for Amazon (CS-Capstone). Followed an agile development workflow over the semester with weekly code and design sprints. Leveraged SwiftUI, UIKit and GameKit.\nPosition: Team lead and Scrum Master",
+                "color": "rgba(0, 255, 255, 0.25 )",
                 "z": 0
             }, {
                 "title": "AML - KMeans",
                 "desc": "Designed a black-box attack that uses data poisoning to increase mis-classifications in a KMeans implementation",
-                "long_desc": "chalkboard-teacher",
-                "color": "rgba(255, 255, 255, 0.1 )",
+                "long_desc": "Designed an implemented a black-box data poisoning exploit to increase mis-classifications in state-of-the-art (scikit-learn) KMeans Classifiers as capstone project for Matrix Methods in Machine Learning.\nPosition: Team lead",
+                "color": "rgba(0, 0, 0, 0.25 )",
                 "z": 0
             },]
         }

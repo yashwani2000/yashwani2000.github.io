@@ -12,9 +12,9 @@
 }
 
 .work_card {
-    min-width: 300px;
-    max-width: 1000px;
-    min-height: 200px;
+    min-width: 16.5vw;
+    max-width: fit-content;
+    min-height: 20vh;
     box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
     border-radius: 20px;
     backdrop-filter: blur(20px);
@@ -28,6 +28,7 @@
     transition: 0.5s;
     display: flex;
     flex-direction: column;
+    cursor: pointer;
 }
 
 .work_card h2 {
@@ -53,6 +54,7 @@
     transition: 0.5s;
     transform: translateY(-2rem);
     z-index: 5 !important;
+    cursor: pointer;
 }
 
 .fa-chalkboard-teacher {
