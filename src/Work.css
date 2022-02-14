@@ -8,12 +8,12 @@
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
-    margin-right: -3em;
+    margin-right: -5rem;
 }
 
 .work_card {
     min-width: 16.5vw;
-    max-width: fit-content;
+    /*max-width: fit-content;*/
     min-height: 20vh;
     box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
     border-radius: 20px;
@@ -24,7 +24,7 @@
     padding-left: 20px;
     padding-top: 30px;
     flex: 1;
-    margin-left: -3rem;
+    margin-left: -5rem;
     transition: 0.5s;
     display: flex;
     flex-direction: column;
@@ -46,8 +46,8 @@
 }
 
 .work_card svg {
-    height: 50px;
-    width: 50px;
+    height: 35px;
+    width: 35px;
 }
 
 .work_card:hover {
@@ -57,7 +57,7 @@
     cursor: pointer;
 }
 
-.fa-chalkboard-teacher {
+.fa-chalkboard-user {
     color: #4169e1;
 }
 

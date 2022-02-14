@@ -65,9 +65,9 @@ export class Work extends React.Component {
                 "name": "Software Engineering Intern",
                 "desc": "Crave Eats",
                 "longDesc": "Developing a native iOS and Android app using the Flutter SDK and Google's Firebase." +
-                    "Involves developing algorithmic solutions for the backend of the app, " +
-                    "engineering a ML recommendation system based on user preferences to enhance user experience." +
-                    "• Collaborating in an agile manner with cross-functional team sprints, participated in 100% of weekly scrums to meet production deadlines.",
+                    "Developed algorithmic solutions for the backend of the app, " +
+                    "and engineered a ML recommendation system based on user preferences to enhance user experience." +
+                    "Collaborated in an agile manner with cross-functional team sprints, participated in 100% of weekly scrums to meet production deadlines.",
                 "logo": "pizza-slice",
                 "fa_b": true,
                 "color": "rgba(0, 255, 0, 0.1 )",

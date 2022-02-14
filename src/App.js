@@ -1,7 +1,7 @@
 import './App.css';
 import React from "react";
 import Background from "./Background";
-import {HashRouter as Router, Route, Switch, Link} from "react-router-dom";
+import {HashRouter as Router, Route, Routes, Link} from "react-router-dom";
 import {Projects} from "./Projects";
 import Skills from "./Skills";
 import {Resume} from "./Resume";
@@ -78,14 +78,14 @@ class Base extends React.Component {
                             <li><Link to="/contact">Contact</Link></li>
                         </ul>
                     </header>
-                    <Switch>
-                        <Route path="/projects" render={() => <Projects createModal={this.createModal}/>}/>
-                        <Route path="/work" render={() => <Work createModal={this.createModal}/>}/>
-                        <Route path="/skills" component={Skills}/>
-                        <Route path="/resume" component={Resume}/>
-                        <Route path="/contact" component={Contact}/>
-                        <Route path="/" component={Home}/>
-                    </Switch>
+                    <Routes>
+                        <Route path="/projects" element={<Projects createModal={this.createModal}/>}/>
+                        <Route path="/work" element={<Work createModal={this.createModal}/>}/>
+                        <Route path="/skills" element={<Skills />}/>
+                        <Route path="/resume" element={<Resume />}/>
+                        <Route path="/contact" element={<Contact />}/>
+                        <Route path="/" element={<Home />}/>
+                    </Routes>
                 </Router>
                 <Modal show={this.state.showModal} title={this.state.modalTitle} desc={this.state.modalDesc}
                        close={this.closeModal}/>

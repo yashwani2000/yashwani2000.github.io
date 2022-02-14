@@ -122,7 +122,7 @@ function Cube() {
 function Lights() {
     return (
         <>
-            <ambientLight args={"#444"}/>
+            {/*<ambientLight args={"#444"}/>*/}
             <directionalLight args={["#fff", 0.5]} position={[1, 1, 1]}/>
             <directionalLight args={["#fff", 1.5]} position={[0, -1, 0]}/>
         </>
