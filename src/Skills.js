@@ -49,6 +49,8 @@ export default function Skills() {
         }, {
             "name": "PHP", "desc": "", "logo": ["fab", "php"], "fa_b": true, "color": "rgba(0,0,0,0.2)"
         }, {
+            "name": "DialogFlow", "desc": "", "logo": "https://seeklogo.com/images/D/dialogflow-logo-534FF34238-seeklogo.com.png", "fa_b": false, "color": "rgba(0,0,0,0.2)"
+        }, {
             "name": "ROS", "desc": "", "logo": ["fas", "robot"], "fa_b": true, "color": "rgba(0,0,0,0.2)"
         }, {
             "name": "UE4", "desc": "", "logo": "https://upload.wikimedia.org/wikipedia/commons/d/da/Unreal_Engine_Logo.svg", "fa_b": false, "color": "rgba(0,0,0,0.2)"
