@@ -28,13 +28,13 @@ export class Projects extends React.Component {
                 "z": 0
             }, {
                 "title": "Leap Motion for Mobile Robot Control",
-                "desc": "Engineered a hand tracked gesture based interface to control a mobile robot.",
+                "desc": "Engineered a hand tracked gesture based interface to control a mobile robot",
                 "long_desc": "Engineered a hand tracked gesture based interface to control a mobile robot through ROS networking and LEAP Motion Controller in an interdisciplinary team of 3.\nPosition: Team Member\n\nURL: https://canvas.wisc.edu/files/23655894/download?download_frd=1&verifier=evYxraKEu8BLFt3DjwTqMPEIdeBOyIreKCESC57v/",
                 "color": "rgba(96, 52, 211, 0.25 )",
                 "z": 0
             }, {
                 "title": "2048-AI",
-                "desc": "Project in making a machine learning model to play the famous game 2048.",
+                "desc": "Project in making a machine learning model to play the famous game 2048",
                 "long_desc": "Designed and trained a neural network using the genetic algorithm to play the game 2048 in team of three.\nPosition: Team Lead",
                 "color": "rgba(230, 196, 66, 0.25 )",
                 "z": 0
@@ -46,7 +46,7 @@ export class Projects extends React.Component {
                 "z": 0
             }, {
                 "title": "Variational Auto-Encoder",
-                "desc": "Engineered a variational auto-encoder to generate hand-written digits.",
+                "desc": "Engineered a variational auto-encoder to generate hand-written digits",
                 "long_desc": "Engineered a variational auto-encoder in TensorFlow to generate hand-written digits by training on the MNSIT dataset",
                 "color": "rgba(255, 0, 0, 0.25 )",
                 "z": 0
@@ -61,6 +61,18 @@ export class Projects extends React.Component {
                 "desc": "Music effects applied to audio in real-time",
                 "long_desc": "Implemented multiple filters to add Echo, Flanging and Chorus effects in C with OpenMP parallelization and EDMA optimizations to achieve real-time results. Worked in a team of 2.\nPosition: Team Lead",
                 "color": "rgba(0, 40, 104, 0.25 )",
+                "z": 0
+            }, {
+                "title": "Milk Weights",
+                "desc": "A JavaFX Application to analyze and generate reports on a large dataset from a dairy farm",
+                "long_desc": "Designed and implemented a complete JavaFX application in a team of 5. Engineered a custom data structure similar to a segment tree to generate as many reports in constant time as possible.\nPosition: Team Lead",
+                "color": "rgba(106, 13, 173, 0.25 )",
+                "z": 0
+            }, {
+                "title": "GradeCloud",
+                "desc": "Platform that assists teachers with auto-grading paper-based exams and assignments",
+                "long_desc": "This project was built in 24 hours at the Dare Mighty Things Hackathon 2019 in McDonald's HQ in Chicago, IL. GradeCloud is a platform that assists teachers with grading paper-based exams and assignments by utilizing the powerful image recognition and processing APIs provided by Cloudinary to generate helpful insights for teachers. Ensuring minimum time is needed on grading complex problems, streamlining the traditional grading process.\nWon the Cloudinary award at Hackathon.\nPosition: Team Lead\n\nURL: https://github.com/pkgamma/gradecloud",
+                "color": "rgba(210, 107, 57, 0.25 )",
                 "z": 0
             }]
         }
