@@ -88,7 +88,7 @@ export class Work extends React.Component {
                     "Currently with the company to make its operations completely paperless till production.\n\nProvided user requirements analysis, design, and programming support to enhance website development using HTML and React." +
                     " Support maintenance programming development for their upcoming web pages and web applications." +
                     " Researched new web technologies, including software and hardware developments and recommended purchases and changes in design, software, and hardware.",
-                "logo": "https://technicalpublications.org/content/images/thumbs/0000373.png",
+                "logo": "https://cdn.shopify.com/s/files/1/0620/3355/9723/files/Technical-Logo-06.png?v=1658903951",
                 "fa_b": false,
                 "color": "rgba(255, 0, 0, 0.1 )",
                 "z": 4
