@@ -63,3 +63,44 @@ header ul li a:hover {
     box-shadow: 0 15px 35px rgba(255, 255, 255, 0.05);
     border-radius: 20px;
 }
+
+@media (max-width: 1200px) {
+    .container {
+        position: absolute;
+        min-width: 85vw;
+        max-width: 85vw;
+    }
+}
+
+@media (max-width: 992px) {
+    .base {
+        overflow: auto;
+    }
+
+    .container {
+        position: absolute;
+        min-width: 80vw;
+        max-width: 80vw;
+        min-height: auto;
+        max-height: 190vh;
+        flex-direction: column;
+        margin-top: 40px;
+    }
+
+    header {
+        flex-direction: column;
+    }
+
+    header ul {
+        margin-top: 10px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    header ul li {
+        margin: 2px;
+    }
+    header ul li a {
+        display: inline-block;
+    }
+}

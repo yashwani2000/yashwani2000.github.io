@@ -46,3 +46,25 @@
         transform: translateY(40px);
     }
 }
+
+@media (max-width: 1200px) {
+    .home_tile {
+        transform: translateX(-40px);
+    }
+}
+
+@media (max-width: 992px) {
+    .home_container {
+    }
+
+    .home_tile {
+        transform: translateX(0);
+        max-width: 90%;
+        margin-top: 150px;
+    }
+
+    .imgBox {
+        margin-bottom: 80px;
+    }
+
+}
