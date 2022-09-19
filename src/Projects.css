@@ -39,3 +39,33 @@
     color: white;
 }
 
+@media (max-width: 992px) {
+    .projects_container {
+        padding-top: 15vh;
+    }
+}
+
+@media (max-width: 414px){
+
+    .projects_container {
+        padding-top: 20vh;
+    }
+
+
+    .projects_container ul {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    }
+
+    .project_card {
+        min-height: auto;
+    }
+
+}
+
+@media (max-width: 320px){
+
+    .projects_container {
+        padding-top: 110vh;
+    }
+
+}

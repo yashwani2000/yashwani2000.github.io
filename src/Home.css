@@ -68,3 +68,39 @@
     }
 
 }
+
+@media (max-width: 800px) {
+    .home_tile h2 {
+        font-size: 1.5em;
+    }
+
+    .home_tile h1 {
+        font-size: 1.2em;
+    }
+
+    .home_tile p {
+        font-size: 1em;
+        color: white;
+    }
+}
+
+@media (max-width: 736px) {
+    .imgBox img {
+        max-width: 300px;
+    }
+
+}
+
+@media (max-width: 600px) {
+    .home_tile {
+        padding: 40px 40px 40px 40px;
+    }
+
+}
+
+@media (max-width: 414px){
+
+    .imgBox img {
+        max-width: 200px;
+    }
+}

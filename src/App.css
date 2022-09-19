@@ -64,14 +64,6 @@ header ul li a:hover {
     border-radius: 20px;
 }
 
-@media (max-width: 1200px) {
-    .container {
-        position: absolute;
-        min-width: 85vw;
-        max-width: 85vw;
-    }
-}
-
 @media (max-width: 992px) {
     .base {
         overflow: auto;
@@ -82,7 +74,7 @@ header ul li a:hover {
         min-width: 80vw;
         max-width: 80vw;
         min-height: auto;
-        max-height: 190vh;
+        max-height: 400vh;
         flex-direction: column;
         margin-top: 40px;
     }
@@ -103,4 +95,20 @@ header ul li a:hover {
     header ul li a {
         display: inline-block;
     }
+}
+
+@media (max-width: 414px){
+    header {
+        padding: 0;
+    }
+
+    header ul li {
+        list-style: none;
+        margin: 0;
+    }
+
+    header ul li a {
+        font-size: 15px;
+    }
+
 }
