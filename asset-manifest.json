@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/static/css/main.80e7d062.css",
+    "main.css": "/static/css/main.f38f7615.css",
     "main.js": "/static/js/main.25fc8b69.js",
     "static/media/face1.png": "/static/media/face1.04370258c90bb0763ffa.png",
     "static/media/wipi.png": "/static/media/wipi.315efa1ab8a9f742820b.png",
     "index.html": "/index.html",
-    "main.80e7d062.css.map": "/static/css/main.80e7d062.css.map",
+    "main.f38f7615.css.map": "/static/css/main.f38f7615.css.map",
     "main.25fc8b69.js.map": "/static/js/main.25fc8b69.js.map"
   },
   "entrypoints": [
-    "static/css/main.80e7d062.css",
+    "static/css/main.f38f7615.css",
     "static/js/main.25fc8b69.js"
   ]
 }
